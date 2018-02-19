@@ -1,0 +1,105 @@
+.full-width {
+	width: 100%;
+}
+
+a {
+    color: #0AA9DF;
+}
+
+.no-pad {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border:0px;
+    border-color: #fd0000;
+    border-bottom: 2px solid #00a7e1;
+    border-radius: 0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #777;
+    padding: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background: none;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.navbar-default .navbar-nav>.active>a {
+	background:none;
+}
+
+.btn-primary {
+    background: #00a6e4;
+    border-color: #00a6e4;
+    padding: 15px 24px;
+    font-size: 22px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+}
+
+.btn-primary:hover {
+    background: #1DCFEF;
+    border-color: #1DCFEF;
+}
+
+.btn-default {
+    background: #393939;
+    border: #393939;
+    color: #adadad;
+    border-radius: 0px;
+}
+
+.amazon_splash h2, .amazon_splash h3, .amazon_splash ul li  {
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+}
+
+.amazon_splash ul {
+    margin:20px 0px 20px 0px;
+}
+
+.fa-star, .fa-star-half-o {
+    color: #ffc000;
+}
+
+.comment_divider {
+    border-top:3px dotted #e4e4e4;
+    padding-bottom: 10px;
+}
+
+.bx-wrapper {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: #000000;
+    color: #8c8c8c;
+}
+
+.footer ul li a:hover {
+    color: #fff;
+}
+
+hr {
+    border-color: #ABABAC;
+}
+
+.divider hr {
+    margin-top: 40px;
+}
+
+/* media queries for mobile device if necessary */
+@media handheld, only screen and (max-width: 992px) {
+
+    .navbar-default .navbar-nav>li>a {
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 15px;
+    }
+
+}
