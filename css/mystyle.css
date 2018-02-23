@@ -8,11 +8,11 @@ body {
 }
 
 body > .container {
-  padding: 60px 15px 60px 15px;
+  padding: 15px 15px 15px 15px;
 }
 
 .container .text-muted {
-  margin: 20px 0;
+  margin: 10px 0 5px 0;
 }
 
 .footer > .container {
@@ -51,6 +51,14 @@ body > .container {
     margin: .67em 0;
 }
 
+.image-slider-control-button {
+    height: 40px;
+    width: 40px !important;
+    background: rgb(38,181,214);
+    border: 5px solid rgb(38,181,214);
+    border-radius: 140px;
+}
+
 .h1-higlight {
   color: rgb(38, 181, 214);
   font-size: 1em;
@@ -83,7 +91,7 @@ body > .container {
 
 .footer-waterrower {
   background: rgb(37,37,37);
-  padding: 3%;
+  padding: 3.5%;
   border-top: 1px solid rgb(0,0,0);
 }
 
@@ -93,18 +101,10 @@ body > .container {
 }
 
 
-@media (max-width: 768px) {
-  .footer-spacer { 
-  margin-top: 15%;
-}
-
-}
-
-
 @media (min-width: 1024px) {
   .video-container h1, .h1 {
     font-size: 3em;
-    margin: 15% 0;
+    margin: 23% 0;
   }
 }
 
@@ -139,6 +139,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 7%;
 } */
 
+.navbar-brand {
+  padding: 5px 15px;
+}
+
 
 /* --------------------------------------------------
                 Sticky footer styles
@@ -161,7 +165,7 @@ html {
 .text-muted {
   color: rgb(244, 228, 16);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .footer .btn {
@@ -184,12 +188,26 @@ html {
 }
 
 .footer-spacer {
-  padding-top: 6.91%;
+  padding-bottom: 70px;
 }
 
 .footer-spacer-mobile {
-  padding-top: 29.95%;
+  padding-top: 89px;
 }
+
+
+/* ----------------------------------------------
+            Footer Responsiveness
+---------------------------------------------- */
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+  .footer-spacer {
+    padding-bottom: 69px;
+  }
+}
+
 
 /* ----------------------------------------------
                     Image Slider
@@ -210,10 +228,12 @@ html {
   background-image: none;
 }
 .carousel-showmanymoveone .carousel-control.left {
-  margin-left: 5px;
+  margin-left: 20px;
+  margin-top: 3%;
 }
 .carousel-showmanymoveone .carousel-control.right {
-  margin-right: 5px;
+  margin-right: 20px;
+  margin-top: 3%;
 }
 .carousel-showmanymoveone .cloneditem-1,
 .carousel-showmanymoveone .cloneditem-2,
@@ -521,6 +541,21 @@ html {
     width: 98%;
     padding: 5px;
   }
+
+
+
+  /* This is for the image slider slide control beneath the waterrower video */
+  .carousel-showmanymoveone .carousel-control.left {
+    margin-left: 0px;
+    margin-top: 25%;
+}
+.carousel-showmanymoveone .carousel-control.right {
+  margin-right: 0px;
+  margin-top: 25%;
+}
+
+
+
 }
 
 @media (min-width: 481px) and (max-width: 767px){
@@ -537,6 +572,7 @@ html {
     width: 98%;
     padding: 5px;
   }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px){
@@ -546,6 +582,16 @@ html {
   .testimonial4_control_button .carousel-control.right{
     right: 5%;
   }
+
+    .carousel-showmanymoveone .carousel-control.left {
+    margin-left: 0px;
+    margin-top: 12%;
+}
+.carousel-showmanymoveone .carousel-control.right {
+  margin-right: 0px;
+  margin-top: 12%;
+}
+
 }
 
 @-webkit-keyframes psBoxShadowEffect_2{
