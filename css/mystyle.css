@@ -8,11 +8,11 @@ body {
 }
 
 body > .container {
-  padding: 60px 15px 60px 15px;
+  padding: 15px 15px 15px 15px;
 }
 
 .container .text-muted {
-  margin: 20px 0;
+  margin: 10px 0 5px 0;
 }
 
 .footer > .container {
@@ -27,8 +27,8 @@ body > .container {
 }
 
 .navbar-brand img {
-	width: 180px;
-	height: auto;
+  width: 180px;
+  height: auto;
 }
 
 #customer-reviews-container a {
@@ -51,17 +51,21 @@ body > .container {
     margin: .67em 0;
 }
 
+.image-slider-control-button {
+    height: 40px;
+    width: 40px !important;
+    background: rgb(38,181,214);
+    border: 5px solid rgb(38,181,214);
+    border-radius: 140px;
+}
+
 .h1-higlight {
   color: rgb(38, 181, 214);
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 .glyphicon-star {
     color: rgb(255, 192, 0);
-}
-
-#testimonial4 p {
-  padding-
 }
 
 .img-gal-container {
@@ -83,7 +87,8 @@ body > .container {
 
 .footer-waterrower {
   background: rgb(37,37,37);
-  padding: 3%;
+  padding-top: 3%;
+  padding-bottom: 4%;
   border-top: 1px solid rgb(0,0,0);
 }
 
@@ -92,19 +97,16 @@ body > .container {
   color: rgb(242,242,242);
 }
 
-
-@media (max-width: 768px) {
-  .footer-spacer { 
-  margin-top: 15%;
-}
-
+.btn-get-amazon {
+  border: none;
+  border-radius: 10px;
 }
 
 
 @media (min-width: 1024px) {
   .video-container h1, .h1 {
     font-size: 3em;
-    margin: 15% 0;
+    margin: 13% 0;
   }
 }
 
@@ -120,7 +122,7 @@ body > .container {
 -------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6, p {
-	font-family: 'Titillium Web', Arial, sans-serif;
+  font-family: 'Titillium Web', Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -139,6 +141,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 7%;
 } */
 
+.navbar-brand {
+  padding: 5px 15px;
+}
+
 
 /* --------------------------------------------------
                 Sticky footer styles
@@ -154,17 +160,27 @@ html {
   width: 100%;
   /* Set the fixed height of the footer here */
   /* height: 60px; */
-  background: rgb(38,181,214);
+  background: rgb(253,151,15);
   
 }
 
 .text-muted {
-  color: rgb(244, 228, 16);
+  color: rgb(11,101,195);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-.footer .btn {
+
+/* ------------------------------------------------
+          testing
+------------------------------------------------ */
+.footer-cta span {
+  font-family: 'Titillium Web', Arial, sans-serif;
+  font-weight: bold;
+}
+
+
+.btn {
   font-weight: 700;
   color: rgb(37, 37, 37);
   background: rgb(205, 217, 41);
@@ -173,23 +189,77 @@ html {
   border: none;
 }
 
+.btn-lg-replacer {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+
+
+/* ------------------------------------------------
+          end of testing
+------------------------------------------------ */
+
+
+.footer .btn {
+    font-family: 'Titillium Web', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(255,255,255);
+    background: rgb(12,114,220);
+    font-size: 18px;
+    margin: 0 10px 10px 10px;
+    border: none;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.footer .btn-mobile {
+    font-family: 'Titillium Web', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background: rgb(12,114,220);
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 .footer .btn a {
   letter-spacing: 2%;
 }
 
 .footer .btn:hover {
-  background: rgb(177,187,36);
+  background: rgb(10,100,194);
   -webkit-transition: all 0.3s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6 */
           transition: all 0.3s ease-out; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+ */
 }
 
 .footer-spacer {
-  padding-top: 6.91%;
+  padding-bottom: 70px;
 }
 
 .footer-spacer-mobile {
-  padding-top: 29.95%;
+  padding-top: 89px;
 }
+
+
+/* ----------------------------------------------
+            Footer Responsiveness
+---------------------------------------------- */
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+  .footer-spacer {
+    padding-bottom: 69px;
+  }
+}
+
 
 /* ----------------------------------------------
                     Image Slider
@@ -210,10 +280,12 @@ html {
   background-image: none;
 }
 .carousel-showmanymoveone .carousel-control.left {
-  margin-left: 5px;
+  margin-left: 20px;
+  margin-top: 3%;
 }
 .carousel-showmanymoveone .carousel-control.right {
-  margin-right: 5px;
+  margin-right: 20px;
+  margin-top: 3%;
 }
 .carousel-showmanymoveone .cloneditem-1,
 .carousel-showmanymoveone .cloneditem-2,
@@ -521,6 +593,21 @@ html {
     width: 98%;
     padding: 5px;
   }
+
+
+
+  /* This is for the image slider slide control beneath the waterrower video */
+  .carousel-showmanymoveone .carousel-control.left {
+    margin-left: 0px;
+    margin-top: 25%;
+}
+.carousel-showmanymoveone .carousel-control.right {
+  margin-right: 0px;
+  margin-top: 25%;
+}
+
+
+
 }
 
 @media (min-width: 481px) and (max-width: 767px){
@@ -537,6 +624,7 @@ html {
     width: 98%;
     padding: 5px;
   }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px){
@@ -546,6 +634,16 @@ html {
   .testimonial4_control_button .carousel-control.right{
     right: 5%;
   }
+
+    .carousel-showmanymoveone .carousel-control.left {
+    margin-left: 0px;
+    margin-top: 12%;
+}
+.carousel-showmanymoveone .carousel-control.right {
+  margin-right: 0px;
+  margin-top: 12%;
+}
+
 }
 
 @-webkit-keyframes psBoxShadowEffect_2{
