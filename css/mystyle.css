@@ -27,8 +27,8 @@ body > .container {
 }
 
 .navbar-brand img {
-	width: 180px;
-	height: auto;
+  width: 180px;
+  height: auto;
 }
 
 #customer-reviews-container a {
@@ -61,15 +61,11 @@ body > .container {
 
 .h1-higlight {
   color: rgb(38, 181, 214);
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 .glyphicon-star {
     color: rgb(255, 192, 0);
-}
-
-#testimonial4 p {
-  padding-
 }
 
 .img-gal-container {
@@ -91,7 +87,8 @@ body > .container {
 
 .footer-waterrower {
   background: rgb(37,37,37);
-  padding: 3.5%;
+  padding-top: 3%;
+  padding-bottom: 4%;
   border-top: 1px solid rgb(0,0,0);
 }
 
@@ -100,11 +97,16 @@ body > .container {
   color: rgb(242,242,242);
 }
 
+.btn-get-amazon {
+  border: none;
+  border-radius: 10px;
+}
+
 
 @media (min-width: 1024px) {
   .video-container h1, .h1 {
     font-size: 3em;
-    margin: 23% 0;
+    margin: 13% 0;
   }
 }
 
@@ -120,7 +122,7 @@ body > .container {
 -------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6, p {
-	font-family: 'Titillium Web', Arial, sans-serif;
+  font-family: 'Titillium Web', Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -158,17 +160,27 @@ html {
   width: 100%;
   /* Set the fixed height of the footer here */
   /* height: 60px; */
-  background: rgb(38,181,214);
+  background: rgb(253,151,15);
   
 }
 
 .text-muted {
-  color: rgb(244, 228, 16);
+  color: rgb(11,101,195);
   font-weight: bold;
   font-size: 16px;
 }
 
-.footer .btn {
+
+/* ------------------------------------------------
+          testing
+------------------------------------------------ */
+.footer-cta span {
+  font-family: 'Titillium Web', Arial, sans-serif;
+  font-weight: bold;
+}
+
+
+.btn {
   font-weight: 700;
   color: rgb(37, 37, 37);
   background: rgb(205, 217, 41);
@@ -177,12 +189,52 @@ html {
   border: none;
 }
 
+.btn-lg-replacer {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+
+
+/* ------------------------------------------------
+          end of testing
+------------------------------------------------ */
+
+
+.footer .btn {
+    font-family: 'Titillium Web', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(255,255,255);
+    background: rgb(12,114,220);
+    font-size: 18px;
+    margin: 0 10px 10px 10px;
+    border: none;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.footer .btn-mobile {
+    font-family: 'Titillium Web', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background: rgb(12,114,220);
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 .footer .btn a {
   letter-spacing: 2%;
 }
 
 .footer .btn:hover {
-  background: rgb(177,187,36);
+  background: rgb(10,100,194);
   -webkit-transition: all 0.3s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6 */
           transition: all 0.3s ease-out; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+ */
 }
